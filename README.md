@@ -1,6 +1,6 @@
 # Darlysson Teles
 
-Senior Software Engineer @ [The Access Group](https://www.theaccessgroup.com) · Brazil
+Senior Software Engineer @ [The Access Group](https://www.theaccessgroup.com)
 
 **Stack**
 
