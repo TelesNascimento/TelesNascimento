@@ -1,6 +1,9 @@
 # Darlysson Teles
 
-Senior Software Engineer @ [The Access Group](https://www.theaccessgroup.com)
+Senior Software Engineer at [The Access Group](https://www.theaccessgroup.com). Payments and
+security on the JVM. Open to remote contract / PJ engagements (US / UK / EU / APAC).
+
+Focus: PCI DSS compliance, payments integration, Quarkus / Jakarta EE, fault tolerance.
 
 **Stack**
 
@@ -11,7 +14,6 @@ Senior Software Engineer @ [The Access Group](https://www.theaccessgroup.com)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 **Security**
@@ -23,26 +25,41 @@ Senior Software Engineer @ [The Access Group](https://www.theaccessgroup.com)
 
 ---
 
-**What I'm building**
+**Selected work**
 
-- [`TelesNascimento/quarkus-panache-audit`](https://github.com/TelesNascimento/quarkus-panache-audit) -
-  `@CreatedBy` and `@LastModifiedBy` for Quarkus Panache. Fills Issue #53104.
-- [`teles-forge/farscry`](https://github.com/teles-forge/farscry) -
-  See through any image. OCR engine that converts screenshots into
-  structured context for AI agents. Zero API cost. Single binary.
-- [`teles-forge/pci-dss-field-notes`](https://github.com/teles-forge/pci-dss-field-notes) -
-  PCI DSS SAQ D v4.0.1 implementations:
-  SRI/CSP (Req 6.4.3), tamper detection pipeline (Req 11.6.1).
+Led a full PCI DSS SAQ D v4.0.1 implementation across 5 payment processors (Adyen, Stripe,
+FreedomPay, WorldPay, Shift4), ~798K transactions. Built Subresource Integrity / CSP
+enforcement (Req 6.4.3), a daily payment-page tamper-detection pipeline (Req 11.6.1, on
+Azure DevOps + Datadog), and coordinated an external penetration test. Production on AWS ECS
+Fargate, Lambda, WAF, CloudTrail, AppConfig.
 
 ---
 
-**Selected work**
+**Open source**
 
-Led full PCI DSS SAQ D v4.0.1 implementation across 5 payment processors
-(Adyen, Stripe, FreedomPay, WorldPay, Shift4). Built SRI enforcement via
-custom webpack plugin, daily tamper detection pipeline (Azure DevOps + Datadog),
-and coordinated external pentest with Foregenix. Production: AWS ECS Fargate,
-Lambda, WAF, CloudTrail, AppConfig.
+- [`smallrye-fault-tolerance#1276`](https://github.com/smallrye/smallrye-fault-tolerance/pull/1276) (merged) -
+  fix annotation lookup when fault-tolerance annotations come from a class-level stereotype.
+- [`microprofile-ft-stereotype-portability`](https://github.com/TelesNascimento/microprofile-ft-stereotype-portability) -
+  portability reproduction for stereotype-based fault tolerance.
+- [`smallrye-ft-owb-interceptor-binding`](https://github.com/TelesNascimento/smallrye-ft-owb-interceptor-binding) -
+  reproducer and analysis of an OpenWebBeans transitive interceptor-binding incompatibility (issue #711).
+- [`quarkus-panache-audit`](https://github.com/TelesNascimento/quarkus-panache-audit) -
+  `@CreatedBy` / `@LastModifiedBy` for Quarkus Panache (fills quarkusio #53104).
+- [`quarkus-webhooks`](https://github.com/TelesNascimento/quarkus-webhooks) -
+  multi-provider webhook signature verification for Quarkus.
+
+In progress: proposing TCK / spec portability improvements for stereotype-based fault
+tolerance across CDI implementations (SmallRye Fault Tolerance, OpenWebBeans), so the same
+behavior holds regardless of the underlying CDI engine.
+
+---
+
+**Field notes**
+
+- [`pci-dss-saqd-field-notes`](https://github.com/teles-forge/pci-dss-saqd-field-notes) -
+  sanitized, vendor-neutral field notes for PCI DSS SAQ D v4.0.1: scope and inventory,
+  service providers and AOCs, targeted risk analysis (12.3.1), QSA prep, and deep dives on
+  payment-page script integrity (6.4.3 SRI/CSP) and tamper detection (11.6.1).
 
 ---
 
