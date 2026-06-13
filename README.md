@@ -1,7 +1,7 @@
 # Darlysson Teles
 
 Senior Software Engineer at [The Access Group](https://www.theaccessgroup.com). Payments and
-security on the JVM. Open to remote contract / PJ engagements (US / UK / EU / APAC).
+security on the JVM. (US / UK / EU / APAC).
 
 Focus: PCI DSS compliance, payments integration, Quarkus / Jakarta EE, fault tolerance.
 
