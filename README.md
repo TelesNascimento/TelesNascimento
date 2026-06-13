@@ -56,7 +56,7 @@ behavior holds regardless of the underlying CDI engine.
 
 **Field notes**
 
-- [`pci-dss-saqd-field-notes`](https://github.com/teles-forge/pci-dss-saqd-field-notes) -
+- [`pci-dss-field-notes`](https://github.com/teles-forge/pci-dss-field-notes) -
   sanitized, vendor-neutral field notes for PCI DSS SAQ D v4.0.1: scope and inventory,
   service providers and AOCs, targeted risk analysis (12.3.1), QSA prep, and deep dives on
   payment-page script integrity (6.4.3 SRI/CSP) and tamper detection (11.6.1).
